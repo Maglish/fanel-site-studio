@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Fanel Web Studio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    </head>
+    <body>
+        <nav class="menu">
+            <div class="logo">Fanel Studio</div>
+            <ul class="menu-liens">
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Menu burger mobile -->
+<div class="menu-mobile">
+  <div class="burger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+  <ul class="menu-liens-mobile" id="menuMobile">
+    <li><a href="#hero">Accueil</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#apropos">À propos</a></li>
+    <li><a href="#temoignages">Témoignages</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+
+        <header class="hero">
+            <h1>Fanel web Studio</h1>
+            <p class="slogan">Des sites modernes. Des idées audacieuses. 💡</p>
+            <a href="#services" class="btn-cta"> Découvrez nos services</a>
+        </header>
+
+         <!-- Section Services -->
+          <section class="services" id="services">
+            <h2>Nos Services</h2>
+            <div class="liste-services">
+                <div class="carte-service">
+                    <img src="images/web.svg" alt="Création de sites web" class="icone-service">
+                    <i class="fas fa-laptop-code icone-service"></i>
+                    <h3>Création de sites Web</h3>
+                    <p>Sites modernes, responsives, et uniques.</p>
+                </div>
+                <div class="carte-service">
+                    <img src="images/ux.svg" alt="Design UX/UI" class="icone-service">
+                    <i class="fas fa-paint-brush icone-service"></i>
+                    <h3>Design UX/UI</h3>
+                    <p>Expériences intuitives et esthétiques pour visiteurs.</p>
+                </div>
+                <div class="carte-service">
+                    <img src="images/seo.svg" alt="Optimisation SEO" class="icone-service">
+                    <i class="fas fa-chart-line icone-service"></i>
+                    <h3>Optimisation SEO</h3>
+                    <p>Gagnez en visibilité sur les moteurs de recherche.</p>
+                </div>
+            </div>
+          </section>
+
+          <!-- A propos -->
+          <section class="apropos" id="apropos">
+            <h2>A Propos</h2>
+            <div class="contenu-apropos">
+                <img src="images/teamwork.svg" alt="Notre équipe" class="image-apropos">
+                <div class="texte-apropos">
+                    <p>Chez <strong>Fanel Web Studio</strong>, nous sommes passionnés par la Création d'expériences numériques interactives, modernes et 
+                    accecssibles à tous.</p>
+                    <p>Notre objectif : <em>vous aider à briller sur le web</em>.</p>
+                </div>
+            </div>
+          </section>
+
+
+           <!-- Temoignage -->
+            <section class="temoignages" id="temoignages">
+                <h2>Ce que nos clients disent</h2>
+                <div class="liste-temoignages">
+                    <div class="carte-temoignage">
+                        <img src="images/avatar3.jpg" alt="Client avatar" class="avatar-temoignage">
+                        <p class="avis">"Fanel Studio a transformé notre site en une machine à conversions. Créatif, pro et super réactif !"</p>
+                        <p class="nom-client">-Amélie, fondatrice de MeliDesign</p>
+                    </div>
+                     <div class="carte-temoignage">
+                        <img src="images/avatar1.jpg" alt="Client avatar" class="avatar-temoignage">
+                        <p class="avis">“Un accompagnement de qualité de A à Z. Je recommande à 100 % !”</p>
+                        <p class="nom-client">— David, coach numérique</p>
+                     </div>
+                     <div class="carte-temoignage">
+                        <img src="images/avatar2.jpg" alt="Client avatar" class="avatar-temoignage">
+                        <p class="avis">“Design élégant, fonctionnalités personnalisées… mon site est enfin à la hauteur de mon projet.”</p>
+                        <p class="nom-client">— Salima, photographe indépendante</p>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Contact -->
+             <section class="contact" id="contact">
+                <h2>Contactez-nous</h2>
+                <form class="formulaire-contact" onsubmit="envoyerMessage(event)">
+                    <input type="text" name="nom" placeholder="Votre nom" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
+                    <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+                    <button type="submit">Envoyer</button>
+                    <p id="confirmation" style="display:none;">✅ Votre message a bien été envoyé. Merci !</p>
+                </form>
+
+            </section>
+
+
+
+           <footer class="footer">
+            <div class="contenu-footer">
+                <p>&copy; 2025 Fanel Web Studio. Tous droits réservés.</p>
+    
+                <div class="liens-sociaux">
+                    <a href="https://github.com/ton-profil" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ton-profil" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:contact@fanelstudio.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            </footer>
+
+
+    </body>
